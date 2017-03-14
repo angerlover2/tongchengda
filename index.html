@@ -1,0 +1,202 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>同城速达</title>
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<link rel="stylesheet" type="text/css" href="css/insex.css"/>
+	<style type="text/css">
+		@font-face {
+		  font-family: 'iconfont';
+		  src: url('css/font/iconfont.eot');
+		  src: url('css/font/iconfont.eot?#iefix') format('embedded-opentype'),
+		  url('css/font/iconfont.woff') format('woff'),
+		  url('css/font/iconfont.ttf') format('truetype'),
+		  url('css/font/iconfont.svg#iconfont') format('svg');
+		}
+		.iconfont{
+		  font-family:"iconfont" !important;
+		  font-size:16px;font-style:normal;
+		  -webkit-font-smoothing: antialiased;
+		  -webkit-text-stroke-width: 0.2px;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		.bar .icon1 {
+		    position: relative;
+		    z-index: 20;
+		    padding: .5rem .1rem;
+		    font-size: 1rem;
+		    line-height: 1.2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-group" style="display: non;">
+		<div class="page page-current">
+			<header class="bar bar-nav">
+			  <a class="icon1 iconfont pull-left qx">取消</a>
+			  <a class="icon1 iconfont pull-right more">&#xe60c;</a>
+			  <h1 class="title title1">同城速达下单</h1>
+			</header>
+			<div class="content">
+			 	
+			 	<div class="banner">
+			 		<img src="img/banner.jpg"/>
+			 	</div>
+			 	
+			 	<div class="list-block">
+				    <ul>
+				      <li class="item-content item-link open-about" id="fo1" >
+				        <div class="item-inner " >
+				            <span class="iconfont map01">&#xe60b;</span>
+				            <div class="item-input">
+				              <input type="text" id="from01" placeholder="请输入寄件人详细地址">
+				            </div>
+				        </div>
+				      </li>
+				      <li class="item-content item-link open-about" id="to2" >
+				        <div class="item-inner">
+				          	<span class="iconfont map02">&#xe60b;</span>
+				            <div class="item-input">
+				              <input type="text" id="to02"  placeholder="请输入收件人详细地址">
+				            </div>
+				        </div>
+				      </li>
+				    </ul>
+			  	</div>
+	 	 		<div class="list-block">
+				    <ul>
+				      <li class="item-content item-link">
+				        <div class="item-inner item-inner2" >
+				            <div class="item-title label">物品类型</div>
+				            <div class="item-input">
+				              <input type="text" placeholder="请输入物品类型">
+				            </div>
+				        </div>
+				      </li>
+				      <li class="item-content item-link">
+				        <div class="item-inner item-inner3">
+				          <div class="item-title label blue">物品重量</div>
+				          <input type="text" id="weight" readonly="readonly" placeholder="5公斤以下"></input>
+				        </div>
+				      </li>
+				    </ul>
+			  	</div>
+			 	
+			 	<div class="list-block">
+				    <ul>
+				      <li class="item-content item-link">
+				        <div class="item-inner item-inner3">
+				            <div class="item-title label blue">收取时间</div>
+				          	<input type="text" id="getTime" readonly="readonly" value="立即取件"></input>
+				        </div>
+				      </li>
+				      <li class="item-content item-link">
+				        <div class="item-inner item-inner3">
+				          <div class="item-title label lightyellow">付款方式</div>
+				          <input type="text" id="payWay" readonly="readonly" value="寄付现结"></input>
+				        </div>
+				      </li>
+				    </ul>
+			 	</div>
+			 	
+			 	<div class="list-block">
+				    <ul>
+				      	<li class="item-content item-link">
+					        <div class="item-inner item-inner2" >
+					            <div class="item-title label">备注信息</div>
+					            <div class="item-input">
+					              <input type="email" placeholder="可填写备注（非必填）">
+					            </div>
+					        </div>
+				      	</li>
+			 			<li class="item-content item-link">
+					        <div class="item-inner item-inner2" >
+					            <div class="item-title label">取件密码</div>
+					            <div class="item-input">
+					              <input type="email" placeholder="可填写备注（非必填）">
+					            </div>
+					        </div>
+				      	</li>
+			 		</ul>
+				</div>			 	
+			 	
+			</div>
+			<nav class="bar bar-tab">
+		 		<div class="fl">
+		 			运费估算：<span class="totalPrice">16</span> <span class="ck">￥ (仅供参考)</span>
+		 		</div>
+		 		<div class="fr">
+		 			<div class="send">提交</div>
+		 		</div>
+		 	 </nav>
+	 	</div>
+    </div><!--page-group-首页-->
+    
+    <!-- About Popup地址弹出层 -->
+	<div class="popup popup-about">
+	  <div class="content-block">
+	    <div class="message">
+			<div class="page-group">
+				<header class="header1 bar bar-nav">
+				  <a class="icon1 iconfont pull-left close">&#xe79a;</a>
+				  <a class="icon1 iconfont pull-right more">&#xe60c;</a>
+				  <h1 class="title title1">同城速达</h1>
+				</header>
+				<div class="form">
+					<div class="form-group">
+						<div class="fl">
+							<div>
+								<label for="">
+									<span class="icon-mz"></span>
+									<input type="text" class="who" placeholder="寄件人名字"/>
+								</label>
+							</div>
+							<div>
+								<label for="">
+									<span class="icon-phone1"></span>
+									<input type="text" id="jphone" placeholder="手机号/固话/分机"/>
+								</label>
+							</div>
+						</div>
+						<div class="fr">
+							<span>选取联系人</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="fl">
+							<div>
+								<label for="">
+									<span class="icon-xq"></span>
+									<input type="text" id="address" local="from" placeholder="请输入小区名/大厦名"/>
+								</label>
+							</div>
+							<div>
+								<label for="">
+									<span class="icon-lc"></span>
+									<input type="text" id="floor" placeholder="请输入楼层/门牌号"/>
+								</label>
+							</div>
+						</div>
+						<div class="fr">
+							<span class="map">地图搜索</span>
+						</div>
+					</div>
+				</div>
+				<div id="r-result"><ul></ul></div>
+				<div style="padding: 0.7rem 2%;">
+					<span class="ok">确定</span>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div><!-- 地址弹出层结束 -->
+	
+	
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="js/send.js"></script>
+</body>
+</html>
+
